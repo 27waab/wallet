@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 :root {
     --main-transition: 300ms;
@@ -99,9 +99,41 @@ header .new_operation button i {
     bottom: -1px;
 }
 /* End Header */
+/* Start Wallet Information */
+.info {
+    margin-top: 72px;
+    padding: 10px;
+}
+.info .container {
+    min-height: 100px;
+    background-color: #f1f1f5;
+    padding: 20px;
+    overflow: hidden;
+    height: 150px;
+    border-radius: 30px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+.info .container img {
+    position: absolute;
+    width: 200px;
+    bottom: -50px;
+    right: -30px;
+}
+.info h3 {
+    color: var(--black-color-alt);
+    font-weight: 600;
+}
+.info span {
+    font-size: 60px;
+    font-family: "Ms Madi", cursive;
+    margin-right: 10px;
+}
+/* End Wallet Information */
 /* Start Main Section */
 .main {
-    margin-top: 62px;
+    margin-top: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -136,6 +168,9 @@ header .new_operation button i {
 @media (max-width: 776px) {
     .main .box p:last-child {
         display: none;
+    }
+    .info .container img {
+        width: 150px;
     }
 }
 /* End Main Section */
