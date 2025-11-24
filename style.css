@@ -102,33 +102,68 @@ header .new_operation button i {
 /* Start Wallet Information */
 .info {
     margin-top: 72px;
-    padding: 10px;
+    padding: 15px;
 }
 .info .container {
     min-height: 100px;
     background-color: #f1f1f5;
     padding: 20px;
     overflow: hidden;
-    height: 150px;
+    height: 200px;
     border-radius: 30px;
     display: flex;
     align-items: flex-end;
     position: relative;
+}
+.info .container::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: var(--green-color);
+    opacity: 0.3;
+    bottom: 0;
+    left: -80px;
+    z-index: 1;
+}
+.info .container::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: var(--red-color);
+    opacity: 0.2;
+    top: 0;
+    right: -80px;
+    z-index: 1;
 }
 .info .container img {
     position: absolute;
     width: 200px;
     bottom: -50px;
     right: -30px;
+    z-index: 1;
+}
+.info .text {
+    z-index: 2;
 }
 .info h3 {
     color: var(--black-color-alt);
     font-weight: 600;
+    z-index: 10000;
 }
 .info span {
     font-size: 60px;
     font-family: "Ms Madi", cursive;
     margin-right: 10px;
+    z-index: 10;
+}
+.info h1 {
+    font-size: 32px;
+    font-weight: 700;
+    z-index: 10;
 }
 /* End Wallet Information */
 /* Start Main Section */
