@@ -150,7 +150,7 @@ header .new_operation button i {
     z-index: 2;
 }
 .info h3 {
-    color: var(--black-color-alt);
+    color: var(--black-color);
     font-weight: 600;
     z-index: 10000;
 }
@@ -206,6 +206,11 @@ header .new_operation button i {
     }
     .info .container img {
         width: 150px;
+    }
+    .info .container::before,
+    .info .container::after {
+        width: 180px;
+        height: 180px;
     }
 }
 /* End Main Section */
