@@ -106,7 +106,7 @@ header .new_operation button i {
 }
 .info .container {
     min-height: 100px;
-    background-color: #f1f1f5;
+    background-color: #fdfcfc;
     padding: 20px;
     overflow: hidden;
     height: 200px;
@@ -121,7 +121,8 @@ header .new_operation button i {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background-color: var(--green-color);
+    background-color: #fdfcfc;
+    border: 50px solid #e5e4e4;
     opacity: 0.3;
     bottom: 0;
     left: -80px;
@@ -133,24 +134,25 @@ header .new_operation button i {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background-color: var(--red-color);
+    background-color: #fdfcfc;
+    border: 50px solid #e5e4e4;
     opacity: 0.2;
     top: 0;
     right: -80px;
     z-index: 1;
 }
-.info .container img {
+.info .container img.walletImg {
     position: absolute;
-    width: 200px;
-    bottom: -50px;
-    right: -30px;
+    width: 250px;
+    top: 0;
+    right: 0;
     z-index: 1;
 }
 .info .text {
     z-index: 2;
+    color: var(--black-color-alt);
 }
 .info h3 {
-    color: var(--black-color);
     font-weight: 600;
     z-index: 10000;
 }
@@ -164,6 +166,19 @@ header .new_operation button i {
     font-size: 32px;
     font-weight: 700;
     z-index: 10;
+}
+.info .line {
+    width: 100px;
+    position: absolute;
+}
+.info .line_1 {
+    right: 185px;
+    top: 0
+}
+.info .line_2 {
+    right: 260px;
+    bottom: -20px;
+    transform: rotate(-65deg);
 }
 /* End Wallet Information */
 /* Start Main Section */
@@ -204,13 +219,18 @@ header .new_operation button i {
     .main .box p:last-child {
         display: none;
     }
-    .info .container img {
+    .info .container img.walletImg {
         width: 150px;
+        top: 85px;
     }
     .info .container::before,
     .info .container::after {
         width: 180px;
         height: 180px;
+        border-width: 20px;
+    }
+    .info .line_1 {
+        right: 0;
     }
 }
 /* End Main Section */
