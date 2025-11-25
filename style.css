@@ -122,7 +122,7 @@ header .new_operation button i {
     height: 300px;
     border-radius: 50%;
     background-color: #fdfcfc;
-    border: 50px solid #e5e4e4;
+    border: 50px solid #efebeb;
     opacity: 0.3;
     bottom: 0;
     left: -80px;
@@ -135,7 +135,7 @@ header .new_operation button i {
     height: 300px;
     border-radius: 50%;
     background-color: #fdfcfc;
-    border: 50px solid #e5e4e4;
+    border: 50px solid #efebeb;
     opacity: 0.2;
     top: 0;
     right: -80px;
@@ -234,3 +234,4 @@ header .new_operation button i {
     }
 }
 /* End Main Section */
+
